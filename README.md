@@ -70,7 +70,6 @@ tags:
 | Routing | React Router DOM | 7.18.4 | `src/App.tsx`의 페이지 라우팅과 `src/main.tsx`의 `HashRouter` 구성 |
 | Markdown | React Markdown | 10.1.0 | `src/pages/ArticlePage.tsx`에서 Markdown 문서 본문 렌더링 |
 | Markdown Plugin | remark-gfm | 4.0.1 | 표, 체크박스 등 GitHub Flavored Markdown 문법 지원 |
-| State Management | Zustand | 5.0.15 | `src/store/useCounterStore.ts`, Zustand 학습 예제 상태 관리 |
 | Styling | Tailwind CSS | 4.3.3 | `src/index.css`의 디자인 토큰 및 유틸리티 클래스 사용 |
 | Vite Plugin | @tailwindcss/vite | 4.3.3 | `vite.config.ts`에서 Tailwind CSS 연결 |
 | Linting | ESLint | 10.9.0 | `npm run lint`를 통한 코드 품질 검사 |
