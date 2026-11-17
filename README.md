@@ -1,4 +1,8 @@
-# NAYUHYEONG Frontend Dev Note
+# 💻 NAYUHYEONG Frontend Dev Note
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)  
 
 프론트엔드 개발 과정에서 학습한 개념과 실무 경험을 다시 볼 수 있게 정리하고, 구현 과정에서 생긴 트러블슈팅과 나의 이것저것을 기록하는 개인 개발 노트입니다.
 
@@ -7,13 +11,10 @@ JavaScript, React, TypeScript, 프론트엔드 주제와 기술 동향을 Markdo
 ## 주요 기능
 
 - **Home**: 카테고리별 글 수 및 최근 작성 글
-- **Study Log**: JavaScript, React, TypeScript, Frontend 학습 기록
-- **Tech Trends**: 프론트엔드 및 AI 개발 이슈 기록
-- **Projects**: 프로젝트별 Markdown 문서 폴더 구조
+- **Study Log**: JavaScript, React, TypeScript, Frontend 학습 
+- **Tech Trends**: 프론트엔드 및 AI 개발 최근 기술 동향
+- **Projects**: 개인적으로 작업한 사이드프로젝트 기록
 - **Troubleshooting**: 문제 발생, 해결 과정, 배운 점 기록
-- **Markdown 렌더링**: Frontmatter 및 본문 표시
-- **프로젝트 폴더 상태 유지**: `sessionStorage` 기반 열린 폴더 상태 보관
-- **위로 가기 버튼**: 긴 문서 상단 이동 기능
 
 ## 화면 구성
 
@@ -32,7 +33,7 @@ Home
 
 ## 콘텐츠 구조
 
-학습 문서는 `src/content` 아래 카테고리별 Markdown 파일로 관리한다.
+학습 문서는 `src/content` 아래 카테고리별 Markdown 파일로 관리
 
 ```text
 src/content/
@@ -46,7 +47,7 @@ src/content/
     └── money-log/
 ```
 
-새 문서는 다음과 같은 Frontmatter 형식으로 작성한다.
+새 문서는 다음과 같은 Frontmatter 형식으로 작성
 
 ```md
 ---
@@ -71,38 +72,10 @@ tags:
 | Routing | React Router DOM | 7.18.4 | `src/App.tsx`의 페이지 라우팅과 `src/main.tsx`의 `HashRouter` 구성 |
 | Markdown | React Markdown | 10.1.0 | `src/pages/ArticlePage.tsx`에서 Markdown 문서 본문 렌더링 |
 | Markdown Plugin | remark-gfm | 4.0.1 | 표, 체크박스 등 GitHub Flavored Markdown 문법 지원 |
-| State Management | Zustand | 5.0.15 | `src/store/useCounterStore.ts`, Zustand 학습 예제 상태 관리 |
 | Styling | Tailwind CSS | 4.3.3 | `src/index.css`의 디자인 토큰 및 유틸리티 클래스 사용 |
 | Vite Plugin | @tailwindcss/vite | 4.3.3 | `vite.config.ts`에서 Tailwind CSS 연결 |
 | Linting | ESLint | 10.9.0 | `npm run lint`를 통한 코드 품질 검사 |
 
-## 시작하기
-
-### 1. 의존성 설치
-
-```bash
-npm install
-```
-
-### 2. 개발 서버 실행
-
-```bash
-npm run dev
-```
-
-실행 후 터미널에 표시된 로컬 주소에서 확인할 수 있다.
-
-### 3. 배포용 빌드
-
-```bash
-npm run build
-```
-
-### 4. 코드 검사
-
-```bash
-npm run lint
-```
 
 ## 프로젝트 구조
 
@@ -125,18 +98,18 @@ public/
 
 ## 디자인 원칙
 
-- 일반 텍스트와 Markdown 본문은 **LINESeed**를 사용한다.
-- 강조가 필요한 제목에는 **SEBANG Gothic**을 사용한다.
-- 카테고리와 프로젝트 아이콘을 화면 전반에 일관되게 사용한다.
-- 프로젝트 화면은 폴더와 문서의 계층 구조를 우선해 구성한다.
+- 일반 텍스트와 Markdown 본문은 **LINESeed**를 사용
+- 강조가 필요한 제목에는 **SEBANG Gothic**을 사용
+- 카테고리와 프로젝트 아이콘을 화면 전반에 일관되게 사용
+- 프로젝트 화면은 폴더와 문서의 계층 구조를 우선해 구성
 
 ## 문서 작성 원칙
 
-- Markdown 파일은 카테고리에 맞는 `src/content` 폴더에 추가한다.
-- 파일명은 내용을 나타내는 영문 `kebab-case`를 사용한다.
-- 각 문서는 제목, 설명, 날짜, 태그를 포함한 Frontmatter로 시작한다.
-- 프로젝트 문서는 `src/content/projects/<project-id>` 경로에 추가한다.
+- Markdown 파일은 카테고리에 맞는 `src/content` 폴더에 추가
+- 파일명은 내용을 나타내는 영문 `kebab-case`를 사용
+- 각 문서는 제목, 설명, 날짜, 태그를 포함한 Frontmatter로 시작하여 생성
+- 프로젝트 문서는 `src/content/projects/<project-id>` 경로에 추가
 
 ## License
 
-개인 학습 및 포트폴리오 기록을 위한 프로젝트이다.
+개인 학습 및 포트폴리오 기록을 위한 프로젝트
