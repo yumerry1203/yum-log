@@ -1,0 +1,7 @@
+.dashboard-hero h1 {
+  font-size: clamp(2.3rem, 3.9vw, 3.7rem);
+}
+
+.dashboard-hero::before {
+  background-image: var(--dashboard-hero-image);
+}

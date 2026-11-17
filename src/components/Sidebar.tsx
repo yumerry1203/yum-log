@@ -18,8 +18,7 @@ export function Sidebar({ active, activeCategory }: SidebarProps) {
         <Link aria-label="NAYUHYEONG 홈으로 이동" className="site-brand-link" to="/">
           <span aria-hidden="true" className="site-brand-mark">N</span>
           <span className="site-brand-copy">
-            <strong>NAYUHYEONG</strong>
-            <span>Frontend Dev Note</span>
+            <strong>Yum-log</strong>
           </span>
         </Link>
       </header>

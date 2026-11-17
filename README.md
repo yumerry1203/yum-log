@@ -1,8 +1,8 @@
 # NAYUHYEONG Frontend Dev Note
 
-프론트엔드 개발 과정에서 학습한 개념과 실무 경험을 다시 정리하고, 구현 및 트러블슈팅 과정을 기록하는 개인 개발 노트이다.
+프론트엔드 개발 과정에서 학습한 개념과 실무 경험을 다시 볼 수 있게 정리하고, 구현 과정에서 생긴 트러블슈팅과 나의 이것저것을 기록하는 개인 개발 노트입니다.
 
-JavaScript, React, TypeScript, 프론트엔드 주제와 기술 동향을 Markdown 문서로 관리하고, 개인 프로젝트의 개발 기록을 남긴다.
+JavaScript, React, TypeScript, 프론트엔드 주제와 기술 동향을 Markdown 문서로 관리합니다.
 
 ## 주요 기능
 

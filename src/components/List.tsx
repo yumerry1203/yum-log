@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
+import type { CSSProperties } from 'react'
 import { Sidebar } from './Sidebar'
 
 const iconPath = (name: string) => `${import.meta.env.BASE_URL}icons/${name}.svg`
+const dashboardHeroStyle = {
+  '--dashboard-hero-image': `url(${import.meta.env.BASE_URL}dashboard-pearl-glow.jpeg)`,
+} as CSSProperties
 
 const posts = import.meta.glob<string>('../content/**/*.md', {
   query: '?raw',
@@ -48,11 +52,11 @@ export function List() {
       <Sidebar active="home" />
 
       <section className="dashboard-content" id="top">
-        <section className="dashboard-hero" aria-labelledby="dashboard-title">
+        <section className="dashboard-hero" aria-labelledby="dashboard-title" style={dashboardHeroStyle}>
           <div>
             <p>NAYUHYEONG</p>
-            <h1 id="dashboard-title">Frontend Dev Note</h1>
-            <p className="dashboard-description">프론트엔드 개발 과정에서 학습한 개념과 실무 경험을 다시 정리하고, 구현 및 트러블슈팅 과정을 기록하는 개인 개발 노트입니다.</p>
+            <h1 id="dashboard-title" className="text-md">Frontend Dev Note</h1>
+            <p className="dashboard-description">프론트엔드 개발 과정에서 학습한 개념과 실무 경험을 다시 정리하거나 구현과정에서 발생한 트러블슈팅을 기록하는 개인 개발 노트입니다.</p>
           </div>
           <div aria-hidden="true" className="hero-illustration"><img alt="" className="hero-laptop-image" src={`${import.meta.env.BASE_URL}dashboard-laptop.png`} /></div>
         </section>

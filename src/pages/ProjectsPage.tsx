@@ -150,7 +150,7 @@ export function ProjectsPage() {
       </section>
 
       <Modal footer={<><Button onClick={() => setIsProjectModalOpen(false)} variant="plain">취소</Button><Button disabled={!projectName.trim()} onClick={createProject}>만들기</Button></>} isOpen={isProjectModalOpen} onClose={() => setIsProjectModalOpen(false)} title="프로젝트 만들기">
-        <Input autoFocus label="프로젝트 이름" onChange={(event) => setProjectName(event.target.value)} placeholder="예: Frontend Dev Note" value={projectName} />
+        <Input autoFocus label="프로젝트 이름" onChange={(event) => setProjectName(event.target.value)} placeholder="예: MoneyLog" value={projectName} />
       </Modal>
     </main>
   )
