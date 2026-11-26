@@ -1,12 +1,10 @@
 ---
 title: "TanStack Query로 서버 상태 동기화하기"
-description: "useEffect 수동 요청 관리의 한계를 살펴보고 TanStack Query의 캐시, 쿼리 키, staleTime 기반 동기화 방식을 알아본다."
+description: "useEffect 수동 요청 관리의 한계와 TanStack Query의 캐시, 쿼리 키, staleTime 기반 동기화 방식"
 date: "2026-11-26"
 tags:
   - TanStack Query
   - Server State
-  - React
-  - TypeScript
   - Caching
 ---
 
